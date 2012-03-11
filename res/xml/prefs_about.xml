@@ -27,7 +27,7 @@
 	<PreferenceCategory
 		android:key="devs"
 		android:title="@string/devs">
-		<com.roman.romcontrol.widgets.DeveloperPreference
+		<com.clustycontrol.widgets.DeveloperPreference
 			android:title="Clust3r"
 			aokp:twitterHandle="clust3r"
 			aokp:donateLink="@string/donate_roman" />

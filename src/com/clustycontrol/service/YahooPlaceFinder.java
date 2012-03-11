@@ -1,9 +1,9 @@
 
-package com.roman.romcontrol.service;
+package com.clustycontrol.service;
 
 import android.util.Log;
 
-import com.roman.romcontrol.xml.WeatherXmlParser;
+import com.clustycontrol.xml.WeatherXmlParser;
 
 public class YahooPlaceFinder {
 

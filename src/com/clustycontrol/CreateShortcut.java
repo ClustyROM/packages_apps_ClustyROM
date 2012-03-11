@@ -39,9 +39,9 @@ public class CreateShortcut extends LauncherActivity {
         String intentClass = shortcutIntent.getComponent().getClassName();
 
         shortcutIntent = new Intent();
-        shortcutIntent.setClass(getApplicationContext(), ROMControlActivity.class);
+        shortcutIntent.setClass(getApplicationContext(), ClustyControlActivity.class);
         shortcutIntent.setAction("com.clustycontrol.START_NEW_FRAGMENT");
-        shortcutIntent.putExtra("aokp_fragment_name", intentClass);
+        shortcutIntent.putExtra("clusty_fragment_name", intentClass);
         shortcutIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         shortcutIntent.setFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
 

@@ -1,5 +1,5 @@
 
-package com.roman.romcontrol;
+package com.clustycontrol;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,9 +35,9 @@ import android.widget.ListAdapter;
 import android.widget.Switch;
 import android.widget.TextView;
 
-public class ROMControlActivity extends PreferenceActivity implements ButtonBarHandler {
+public class ClustyControlActivity extends PreferenceActivity implements ButtonBarHandler {
 
-    private static final String TAG = "ROM_Control";
+    private static final String TAG = "CLusty_Control";
 
     private static boolean hasNotificationLed;
     private static String KEY_USE_ENGLISH_LOCALE = "use_english_locale";
@@ -62,7 +62,7 @@ public class ROMControlActivity extends PreferenceActivity implements ButtonBarH
         mTablet = Settings.System.getInt(getContentResolver(), Settings.System.IS_TABLET, 0) == 1;
         hasNotificationLed = getResources().getBoolean(R.bool.has_notification_led);
         defaultLocale = Locale.getDefault();
-        Log.i(TAG, "defualt locale: " + defaultLocale.getDisplayName());
+        Log.i(TAG, "default locale: " + defaultLocale.getDisplayName());
         setLocale();
 
         mInLocalHeaderSwitch = true;
@@ -77,7 +77,7 @@ public class ROMControlActivity extends PreferenceActivity implements ButtonBarH
         }
 
         if (getIntent().getAction().equals("com.aokp.romcontrol.START_NEW_FRAGMENT")) {
-            String className = getIntent().getStringExtra("aokp_fragment_name").toString();
+            String className = getIntent().getStringExtra("clustyrom_fragment_name").toString();
             Bundle b = new Bundle();
             b.putBoolean("started_from_shortcut", true);
             // startPreferencePanel(className, b, 0, null, null, 0);

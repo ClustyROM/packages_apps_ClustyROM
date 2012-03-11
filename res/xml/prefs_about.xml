@@ -29,8 +29,8 @@
 		android:title="@string/devs">
 		<com.clustycontrol.widgets.DeveloperPreference
 			android:title="Clust3r"
-			aokp:twitterHandle="clust3r"
-			aokp:donateLink="@string/donate_roman" />
+			clustyrom:twitterHandle="clust3r"
+			clustyrom:donateLink="@string/donate_roman" />
 
 	</PreferenceCategory>
 

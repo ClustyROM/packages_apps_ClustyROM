@@ -17,11 +17,6 @@
 			android:title="@string/aokp_source_title"
 			android:summary="@string/aokp_source_summary" />
 
-		<Preference
-			android:key="clustyrom_irc"
-			android:title="@string/aokp_irc_title"
-			android:summary="@string/aokp_irc_summary" />
-
 	</PreferenceCategory>
 
 	<PreferenceCategory

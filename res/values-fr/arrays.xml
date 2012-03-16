@@ -325,12 +325,14 @@
 		<item>2</item>
 		<item>6</item>
         <item>8</item>
+		<item>0</item>
 	</string-array>
 
         <string-array name="pref_lockscreen_options_entries">
 		<item>Défaut</item>
 		<item>4 icônes</item>
         <item>8 icônes</item>
+		<item>AOSP</item>
 	</string-array>
 
 	<string-array name="minfree">

@@ -147,7 +147,8 @@
     <string name="enable_fast_torch_summary">Quand l\'écran est éteint. Une pression continue sur le bouton Power allumera le flash. Lacher pour éteindre.</string>
     <string name="lockscreen_wallpaper_title">Sélectionner le fond d\'écran de l\'écran de verrouillage.</string>
     <string name="lockscreen_wallpaper_summary">Vous pouvez supprimer le fond d\'écran via ce menu</string>
-    
+    <string name="lockscreen_text_color_title">"Couleur du texte sur l'écran de verr."</string>
+	
     <!-- Power Menu -->
     <string name="title_show_power_saver">"Afficher l'économiseur d'énergie"</string>
     <string name="title_show_screenshot">"Afficher la capture d'écran"</string>

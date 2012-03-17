@@ -270,9 +270,10 @@ public class Lockscreens extends SettingsPreferenceFragment implements
             AlertDialog.Builder builder = new AlertDialog.Builder(this.getActivity());
             
             ArrayList<Integer> enabledCalendars = getCalendarSources(this.getActivity()
-                    .getApplicationContext());
+					.getApplicationContext());
             
-            final ArrayList<CalendarBundle> availableCalendars = getAvailableCalendars(this.getActivity().getApplicationContext());
+            final ArrayList<CalendarBundle> availableCalendars = getAvailableCalendars(this.getActivity()
+					.getApplicationContext());
             
             boolean checkedCalendars[] = new boolean[availableCalendars.size()];
             
@@ -318,6 +319,7 @@ public class Lockscreens extends SettingsPreferenceFragment implements
             d.show();
 
             return true;
+			
         } else if (keys.contains(preference.getKey())) {
             Log.e("RC_Lockscreens", "key: " + preference.getKey());
             return Settings.System.putInt(getActivity().getContentResolver(), preference.getKey(),

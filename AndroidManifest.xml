@@ -73,6 +73,14 @@
                 <category android:name="com.clustycontrol.SHORTCUT" />
             </intent-filter>
         </activity>
+		<activity
+			android:name=".fragments.InitD"
+			android:label="Init.D" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		<category android:name="com.clustycontrol.SHORTCUT" />
         <activity
             android:name=".tools.VoltageControl"
             android:label="Voltage Control" >

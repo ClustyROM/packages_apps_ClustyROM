@@ -70,6 +70,8 @@
 	<string name="longpress_to_kill_title">Longue pression sur la touche Retour</string>
 	<string name="longpress_to_kill_summary">"Rester appuyé sur la touche Retour pour quitter l'application (libére de la RAM)"</string>
 	
+	<string name="enable_volume_options">Activer les options du Volume</string>
+
 	<string name="rotate_180_title">Autoriser la rotation à 180°</string>
 	<string name="rotate_180_summary">Autorise l\'appareil à effectur une rotation compléte de l\'écran</string>
 
@@ -148,6 +150,15 @@
     <string name="lockscreen_wallpaper_title">Sélectionner le fond d\'écran de l\'écran de verrouillage.</string>
     <string name="lockscreen_wallpaper_summary">Vous pouvez supprimer le fond d\'écran via ce menu</string>
     <string name="lockscreen_text_color_title">"Couleur du texte sur l'écran de verr."</string>
+	<string name="lockscreen_calendar">"Calendrier sur l'écran de verr."</string>
+    <string name="lockscreen_calendar_title">Activer</string>
+    <string name="lockscreen_calendar_summary">Affiche les évenements à venir sur le lockscreen.</string>
+    <string name="lockscreen_calendar_sources_title">Sélectionner les calendriers</string>
+    <string name="lockscreen_calendar_sources_summary">Sélectionner les calendriers à afficher.</string>
+    <string name="lockscreen_calendar_flip_title">Evenements multiples</string>
+    <string name="lockscreen_calendar_flip_summary">Si activé, le widget fera défiler les prochains évenements des 24 prochaines heures.</string>
+    <string name="lockscreen_calendar_interval_title">Interval défilement</string>
+    <string name="lockscreen_calendar_interval_summary">Choisissez le temps de défilement entre 2 évenements</string>
 	
     <!-- Power Menu -->
     <string name="title_show_power_saver">"Afficher l'économiseur d'énergie"</string>

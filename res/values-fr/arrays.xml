@@ -212,15 +212,13 @@
 	<string-array name="statusbar_layout_entries">
 		<item>Affichage normal</item>
 		<item>Inversé</item>
-		<!-- <item>Tabs</item>
-		<item>Bottom Tabs</item> -->
+		<item>Traditionnel</item>
 	</string-array>
 
 	<string-array name="statusbar_layout_values">
 		<item>0</item>
 		<item>1</item>
-		<!-- <item>2</item>
-		<item>3</item> -->
+		<item>2</item>
 	</string-array>
 
 	<!-- clock stuff -->
@@ -333,6 +331,26 @@
 		<item>4 icônes</item>
         <item>8 icônes</item>
 		<item>AOSP</item>
+	</string-array>
+
+		<string-array name="pref_lockscreen_calendar_interval_values">
+		<item>1000</item>
+		<item>1500</item>
+		<item>2000</item>
+		<item>2500</item>
+		<item>3000</item>
+		<item>3500</item>
+		<item>4000</item>
+	</string-array>
+
+	<string-array name="pref_lockscreen_calendar_interval_entries">
+		<item>1 seconde</item>
+		<item>1.5 seconde</item>
+		<item>2 secondes</item>
+		<item>2.5 secondes</item>
+		<item>3 secondes</item>
+		<item>3.5 secondes</item>
+		<item>4 secondes</item>
 	</string-array>
 
 	<string-array name="minfree">

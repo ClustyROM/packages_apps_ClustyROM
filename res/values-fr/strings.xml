@@ -434,5 +434,9 @@
 	<string name="color_tuning_summary_head">Calibrate multipliers screen color</string>
 	<string name="gamma_tuning_title_head">Color Gamma Tuning</string>
 	<string name="gamma_tuning_summary_head">Calibrate gamma color correction</string>
+	<string name="color_red_title">Red</string>
+    <string name="color_green_title">Green</string>
+    <string name="color_blue_title">Blue</string>
+    <string name="reset_defaults">Reset to Defaults</string>
 
 </resources>

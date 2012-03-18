@@ -439,7 +439,7 @@
 		<item>4</item>
 	</string-array>
 	
-	<string-array name="available_toggles_entries">
+	<string-array name="available_toggles_entries" translatable="false">
 		<item>ROTATE</item>
 		<item>BT</item>
 		<item>GPS</item>
@@ -452,7 +452,7 @@
 		<item>SWAGGER</item>
 	</string-array>
 	
-	<string-array name="available_toggles_values">
+	<string-array name="available_toggles_values" translatable="false">
 		<item>Auto-rotate</item>
 		<item>BT</item>
 		<item>GPS</item>

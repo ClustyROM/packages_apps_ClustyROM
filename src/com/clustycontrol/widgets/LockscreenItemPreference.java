@@ -1,4 +1,4 @@
-package com.clustyontrol.widgets;
+package com.clustycontrol.widgets;
 
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.clustyontrol.R;
+import com.clustycontrol.R;
 
 import java.io.File;
 

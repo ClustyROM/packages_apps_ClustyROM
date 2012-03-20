@@ -294,7 +294,7 @@ public class Lockscreens extends SettingsPreferenceFragment implements
                 }
             }
 
-            builder.setTitle("Sélectionner le calendrier à utiliser");
+            builder.setTitle("Selectionner le calendrier a utiliser");
             builder.setCancelable(false);
             builder.setPositiveButton("Fermer", new DialogInterface.OnClickListener() {
 

@@ -28,6 +28,7 @@ import android.provider.MediaStore;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -437,14 +438,14 @@ public class Lockscreens extends SettingsPreferenceFragment implements
 
                 @Override
                 public void onClick(View v) {
-					Boolean isSDPresent = android.os.Environment.getExternalStorageState().equals(
-						android.os.Environment.MEDIA_MOUNTED);
-					if (!isSDPresent) {
-						Toast.makeText(v.getContext(), "Insert SD card to use this feature",
-							Toast.LENGTH_LONG).show();
-						return
-					}
-					
+                    Boolean isSDPresent = android.os.Environment.getExternalStorageState().equals(
+                            android.os.Environment.MEDIA_MOUNTED);
+                    if (!isSDPresent) {
+                        Toast.makeText(v.getContext(), "Insert SD card to use this feature",
+                                Toast.LENGTH_LONG).show();
+                        return;
+                    }
+
                     currentIconIndex = index;
 
                     int width = 100;
@@ -501,10 +502,11 @@ public class Lockscreens extends SettingsPreferenceFragment implements
     }
 
     private Drawable resize(Drawable image) {
-        int size = 100;
+        int size = 50;
+		int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, size, getResources().getDisplayMetrics());
 
         Bitmap d = ((BitmapDrawable) image).getBitmap();
-        Bitmap bitmapOrig = Bitmap.createScaledBitmap(d, size, size, false);
+        Bitmap bitmapOrig = Bitmap.createScaledBitmap(d, px, px, false);
         return new BitmapDrawable(mContext.getResources(), bitmapOrig);
     }
 

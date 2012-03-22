@@ -30,7 +30,7 @@
     <string name="header_summary_general">Comportement du bouton réglages</string>
     <string name="header_summary_toggles">Personnaliser les interrupteurs</string>
 	<string name="header_summary_clock">Personalisation de l\'horloge, AM/PM, couleur</string>
-	<string name="header_summary_weather">Activé/Désactiver météo, paramètrer la ville, l\'interval d\'actualisation</string>
+	<string name="header_summary_weather">Activer/Désactiver météo, paramètrer la ville, l\'interval d\'actualisation</string>
 	<string name="header_summary_signal">Afficher la force du signal (dBm)</string>
 	
     <string name="advanced_settings">Paramètres avancés</string>
@@ -49,7 +49,7 @@
     <string name="navbar_order_summary">"Changer l'ordre des boutons de navigation"</string>
 
     <string name="enabled_navbar_buttons_title">Boutons actifs</string>
-    <string name="enabled_navbar_buttons_summary">>Choisissez quels boutons de navigation seront visibles</string>
+    <string name="enabled_navbar_buttons_summary">Choisissez quels boutons de navigation seront visibles</string>
     
     <string name="button_transparency_title">Transparence bouton de nav.</string>
     
@@ -122,6 +122,8 @@
     <string name="summary_lockscreen_user_timeout_override">"Utiliser le délai d'Android même après avoir manuellement étéint l'écran. Par défaut, le délai est utilisé seulement lorsque l'écran s'éteint automatiquement."</string>
     <string name="lockscreen_battery_title">Afficher le pourcentage de batterie sur l\'écran de verrouillage</string>
     <string name="lockscreen_battery_summary">Affiche à tout moment le pourcentage de batterie restant</string>
+	<string name="lockscreen_low_battery_title">"% Batterie faible"</string>
+	<string name="lockscreen_low_battery_summary">Affiche le pourcentage quand batterie faible</string>
 	<string name="lockscreen_weather_title">Afficher la météo</string>
     <string name="lockscreen_weather_summary">Affiche la météo sur l\'écran de verrouillage, vous devez avoir activer le service météo.</string>
     <string name="volume_wake_title">"Activer l'écran avec les boutons de volume"</string>
@@ -143,10 +145,10 @@
     <string name="lockscreen_action_none">Vide</string>
     <string name="lockscreen_landscape_title">L\'écran de verrouillage supporte le mode paysage</string>
     <string name="lockscreen_landscape_summary">Active le support du mode paysage pour l\'écran de verrouillage</string>
-    <string name="lockscreen_quick_unlock_control_title">Déverouillage par code rapide</string>
-    <string name="lockscreen_quick_unlock_control_summary">Déverouille l\'écran par code sans devoir appuyer sur Entrer</string>
+    <string name="lockscreen_quick_unlock_control_title">Déverrouillage par code rapide</string>
+    <string name="lockscreen_quick_unlock_control_summary">Déverrouille l\'écran par code sans devoir appuyer sur Entrer</string>
     <string name="enable_fast_torch_title">Activer la torche rapide</string>
-    <string name="enable_fast_torch_summary">Quand l\'écran est éteint. Une pression continue sur le bouton Power allumera le flash. Lacher pour éteindre.</string>
+    <string name="enable_fast_torch_summary">Quand l\'écran est éteint. Une pression continue sur le bouton Power allumera le flash. Relacher pour éteindre.</string>
     <string name="lockscreen_wallpaper_title">Sélectionner le fond d\'écran de l\'écran de verrouillage.</string>
     <string name="lockscreen_wallpaper_summary">Vous pouvez supprimer le fond d\'écran via ce menu</string>
     <string name="lockscreen_text_color_title">"Couleur du texte sur l'écran de verr."</string>

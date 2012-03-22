@@ -68,6 +68,7 @@ public class Lockscreens extends SettingsPreferenceFragment implements
 
     private static final String PREF_LOCKSCREEN_BATTERY = "lockscreen_battery";
     private static final String PREF_LOCKSCREEN_WEATHER = "lockscreen_weather";
+	private static final String PREF_LOCKSCREEN_LOW_BATTERY = "lockscreen_low_battery";
     private static final String PREF_LOCKSCREEN_TEXT_COLOR = "lockscreen_text_color";
 
     private static final String PREF_LOCKSCREEN_CALENDAR = "enable_calendar";
@@ -91,6 +92,7 @@ public class Lockscreens extends SettingsPreferenceFragment implements
     CheckBoxPreference mVolumeMusic;
     CheckBoxPreference mLockscreenLandscape;
     CheckBoxPreference mLockscreenBattery;
+	CheckBoxPreference mLockscreenLowBattery;
     CheckBoxPreference mLockscreenWeather;
     CheckBoxPreference mShowLockBeforeUnlock;
     ColorPickerPreference mLockscreenTextColor;
@@ -138,7 +140,11 @@ public class Lockscreens extends SettingsPreferenceFragment implements
         mLockscreenBattery.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_BATTERY, 0) == 1);
 
-        mLockscreenWeather = (CheckBoxPreference) findPreference(PREF_LOCKSCREEN_WEATHER);
+        mLockscreenLowBattery = (CheckBoxPreference) findPreference(PREF_LOCKSCREEN_LOW_BATTERY);
+		mLockscreenLowBattery.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+				Settings.System.LOCKSCREEN_LOW_BATTERY, 0) == 1);
+		
+		mLockscreenWeather = (CheckBoxPreference) findPreference(PREF_LOCKSCREEN_WEATHER);
         mLockscreenWeather.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_WEATHER, 0) == 1);
 
@@ -233,7 +239,14 @@ public class Lockscreens extends SettingsPreferenceFragment implements
                     ((CheckBoxPreference) preference).isChecked() ? 1 : 0);
             return true;
 
-        } else if (preference == mLockscreenWeather) {
+        } else if (preference == mLockscreenLowBattery) {
+		
+			Settings.System.putInt(getActivity().getContentResolver(),
+					Settings.System.LOCKSCREEN_LOW_BATTERY,
+					((CheckBoxPreference) preference).isChecked() ? 1 : 0);
+			return true;
+			
+		} else if (preference == mLockscreenWeather) {
 
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCKSCREEN_WEATHER,

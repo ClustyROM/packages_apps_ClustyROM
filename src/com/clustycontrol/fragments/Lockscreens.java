@@ -68,7 +68,7 @@ public class Lockscreens extends SettingsPreferenceFragment implements
 
     private static final String PREF_LOCKSCREEN_BATTERY = "lockscreen_battery";
     private static final String PREF_LOCKSCREEN_WEATHER = "lockscreen_weather";
-	private static final String PREF_LOCKSCREEN_LOW_BATTERY = "lockscreen_low_battery";
+	//private static final String PREF_LOCKSCREEN_LOW_BATTERY = "lockscreen_low_battery";
     private static final String PREF_LOCKSCREEN_TEXT_COLOR = "lockscreen_text_color";
 
     private static final String PREF_LOCKSCREEN_CALENDAR = "enable_calendar";
@@ -258,12 +258,12 @@ public class Lockscreens extends SettingsPreferenceFragment implements
                     ((CheckBoxPreference) preference).isChecked() ? 1 : 0);
             return true;
 
-        } else if (preference == mLockscreenLowBattery) {
+        /*} else if (preference == mLockscreenLowBattery) {
 		
 			Settings.System.putInt(getActivity().getContentResolver(),
 					Settings.System.LOCKSCREEN_LOW_BATTERY,
 					((CheckBoxPreference) preference).isChecked() ? 1 : 0);
-			return true;
+			return true;*/
 			
 		} else if (preference == mLockscreenWeather) {
 
@@ -355,7 +355,7 @@ public class Lockscreens extends SettingsPreferenceFragment implements
                 }
             }
 
-            builder.setTitle("Selectionner le calendrier a utiliser");
+            builder.setTitle("Selectionner le/les calendriers a utiliser");
             builder.setCancelable(false);
             builder.setPositiveButton("Fermer", new DialogInterface.OnClickListener() {
 

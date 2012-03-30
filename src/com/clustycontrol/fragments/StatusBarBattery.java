@@ -25,9 +25,9 @@ public class StatusBarBattery extends PreferenceFragment implements
     private static final String PREF_BATT_ICON = "battery_icon_list";
 	
 	/* TEST EXPERIMENTAL */
-	private static final String WIFI_SIGNAL_COLOR = "wifi_signal_color";
+	/*private static final String WIFI_SIGNAL_COLOR = "wifi_signal_color";
 	private static final String MOBILE_SIGNAL_COLOR = "mobile_signal_color";
-	private static final String BATTERY_ICON_COLOR = "battery_icon_color";
+	private static final String BATTERY_ICON_COLOR = "battery_icon_color";*/
 
     ListPreference mBatteryIcon;
     ListPreference mBatteryBar;
@@ -36,9 +36,9 @@ public class StatusBarBattery extends PreferenceFragment implements
     CheckBoxPreference mBatteryBarChargingAnimation;
     ColorPickerPreference mBatteryBarColor;
 	/* TEST EXPERIMENTAL */
-	ColorPickerPreference mWifiSignalColor;
+	/*ColorPickerPreference mWifiSignalColor;
 	ColorPickerPreference mMobileSignalColor;
-	ColorPickerPreference mBatteryIconColor;
+	ColorPickerPreference mBatteryIconColor;*/
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,11 +88,11 @@ public class StatusBarBattery extends PreferenceFragment implements
                 + "");
 				
 		/* TEST EXPERIMENTAL */
-		mWifiSignalColor = (ColorPickerPreference) findPreference(WIFI_SIGNAL_COLOR);
+		/*mWifiSignalColor = (ColorPickerPreference) findPreference(WIFI_SIGNAL_COLOR);
 		mWifiSignalColor.setOnPreferenceChangeListener(this);
 		
 		mMobileSignalColor = (ColorPickerPreference) findPreference(MOBILE_SIGNAL_COLOR);
-		mMobileSignalColor.setOnPreferenceChangeListener(this);
+		mMobileSignalColor.setOnPreferenceChangeListener(this);*/
     }
 
     @Override
@@ -154,7 +154,7 @@ public class StatusBarBattery extends PreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_ICON_COLOR, intHex);
             return true;
-        } else if (preference == mWifiSignalColor) {
+       /* } else if (preference == mWifiSignalColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
 			.valueOf(String.valueOf(newValue)));
             preference.setSummary(hex);
@@ -171,8 +171,8 @@ public class StatusBarBattery extends PreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.MOBILE_SIGNAL_COLOR, intHex);
-            return true;
-        }
+            return true;*/
+        } 
         return false;
     }
 
